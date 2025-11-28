@@ -12,13 +12,14 @@ const events = ref(
   ]
 )
 
+
+
 const showInfo = ref(false)
 function showInfoWindow() {
   if (registered.value.length != 0) {
     showInfo.value = true
   }
 }
-// <Tab :title="msg" description="Libre dolor"></Tab>
 const registered = ref([]);
 
 var url = "https://barcodeapi.org/api/qr/"
@@ -42,6 +43,7 @@ function findById(id) {
   <div>
     <div class="upper">
         <h2>Events</h2>
+        
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f" @click="showInfoWindow"><path d="M200-80q-33 0-56.5-23.5T120-160v-480q0-33 23.5-56.5T200-720h80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720h80q33 0 56.5 23.5T840-640v480q0 33-23.5 56.5T760-80H200Zm0-80h560v-480H200v480Zm280-240q83 0 141.5-58.5T680-600h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85h-80q0 83 58.5 141.5T480-400ZM360-720h240q0-50-35-85t-85-35q-50 0-85 35t-35 85ZM200-160v-480 480Z"/></svg>
         
     
@@ -76,6 +78,7 @@ function findById(id) {
   </div>
 
   </div>
+  <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" style="margin-left: 10px;"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg>
 </template>
 
 <style>
