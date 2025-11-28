@@ -4,11 +4,11 @@ import { ref } from 'vue'
 const msg = ref('Hello World!')
 const events = ref(
   [
-  {id: 1, title: "Bookworm festival", desc: "Lorem ipsum", date: "30.11.25 11:30", i: "https://media.newyorker.com/photos/59ee325f1685003c9c28c4ad/master/w_2240,c_limit/Heller-Kirkus-Reviews.jpg$0"},
-  {id: 2, title: "History of the Tea", desc: "Lorem ipsum", date: "30.11.25 12:30", i: "https://plus.unsplash.com/premium_photo-1674406481284-43eba097a291?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D$0"},
-  {id: 3, title: "Planes physics", desc: "Lorem ipsum", date: "11.12.25 16:20", i: "https://images.unsplash.com/photo-1483375801503-374c5f660610?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D$0"},
-  {id: 4, title: "Films secrets", desc: "Lorem ipsum", date: "22.12.25 18:00", i: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2659&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D$0"},
-  {id: 4, title: "Programming tips", desc: "Lorem ipsum", date: "28.12.25 10:00", i: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2372&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D$0"},
+  {id: 1, title: "Bookworm festival", desc: "Lorem ipsum", date: "30.11.25 11:30", i: "https://avatars.mds.yandex.net/i?id=0d0c02fa461573f0e7773159dfc6466bfd800984-7066126-images-thumbs&n=13"},
+  {id: 2, title: "History of the Tea", desc: "Lorem ipsum", date: "30.11.25 12:30", i: "https://radarpekalongan.disway.id/upload/82d02e7ad92fcee121b2d96db780587e.jpg"},
+  {id: 3, title: "Planes physics", desc: "Lorem ipsum", date: "11.12.25 16:20", i: "https://avatars.mds.yandex.net/i?id=609411854af7ac3645c52f163b7b3ea80e1874cd-5235884-images-thumbs&n=13"},
+  {id: 4, title: "Films secrets", desc: "Lorem ipsum", date: "22.12.25 18:00", i: "https://avatars.mds.yandex.net/i?id=b99f9e916d3f9c0efcc748fb6b797e3e79cc40a2-12623317-images-thumbs&n=13https://avatars.mds.yandex.net/i?id=b99f9e916d3f9c0efcc748fb6b797e3e79cc40a2-12623317-images-thumbs&n=13"},
+  {id: 4, title: "Programming tips", desc: "Lorem ipsum", date: "28.12.25 10:00", i: "https://avatars.mds.yandex.net/i?id=efd6f5fc8c557a81e56c599a7a9c79eb_l-6956316-images-thumbs&n=13"},
   ]
 )
 
@@ -77,6 +77,7 @@ function findById(id) {
 
   body {
     margin: 0px;
+    font-family: Helvetica;
   }
 
   .tickets {
