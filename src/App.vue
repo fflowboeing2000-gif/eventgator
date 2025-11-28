@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 
-const msg = ref('Hello World!')
 const events = ref(
   [
   {id: 1, title: "Bookworm festival", desc: "Lorem ipsum", date: "30.11.25 11:30", i: "https://avatars.mds.yandex.net/i?id=0d0c02fa461573f0e7773159dfc6466bfd800984-7066126-images-thumbs&n=13"},
@@ -12,17 +11,11 @@ const events = ref(
   ]
 )
 
-
-
 const showInfo = ref(false)
-function showInfoWindow() {
-  if (registered.value.length != 0) {
-    showInfo.value = true
-  }
-}
+
 const registered = ref([]);
 
-var url = "https://barcodeapi.org/api/qr/"
+const url = "https://barcodeapi.org/api/qr/"
 
 function register(id){
   if (registered.value.indexOf(id) === -1) {
@@ -32,9 +25,10 @@ function register(id){
   }
 }
 
-function findById(id) {
-  return events.value.indexOf(id)
-
+function showInfoWindow() {
+  if (registered.value.length != 0) {
+    showInfo.value = true
+  }
 }
 
 </script>
@@ -50,7 +44,7 @@ function findById(id) {
     </div>
     <p class="badge" v-if="registered.length">{{registered.length}}</p>
   </div>
-  <div class="gr">
+  <div class="events">
 
     <div class="card"  v-for="event in events" :key="event.id">
 
@@ -130,7 +124,7 @@ function findById(id) {
     background-color: #90A955;
   }
 
-  .gr {
+  .events {
     display: grid;
     grid-template-columns: 1fr 1fr;
     
@@ -160,8 +154,8 @@ function findById(id) {
 
 
 
-  @media (max-width: 430px) {
-    .gr {
+  @media (max-width: 490px) {
+    .events {
       display: block;
     }
   }
