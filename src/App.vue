@@ -66,7 +66,7 @@ function findById(id) {
 
   <div class="tickets" v-if="showInfo" @click="showInfo = false">
     <div class="overflow">
-    <div class="window" v-for="ticket in registered" @click="">
+    <div class="window" v-for="ticket in registered" @click.stop>
       <h3>{{events[ticket-1].title}}</h3>
       <p>{{events[ticket-1].date}}</p>
       <div style='text-align: center;'>
